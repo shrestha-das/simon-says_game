@@ -1,0 +1,42 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h1{
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border: 7px solid black;
+    margin: 1rem; 
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    border-radius: 70% 0 0 0;
+    background-color: green;
+}
+
+.three {
+    border-radius: 0 70% 0 0;
+    background-color: rgb(142, 21, 21);
+}
+
+.two {
+    border-radius: 0 0 0 70% ;
+    background-color: rgb(232, 232, 70);
+}
+
+.four {
+    border-radius: 0 0 70% 0;
+    background-color: rgb(41, 41, 117);
+}
