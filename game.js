@@ -12,6 +12,7 @@ document.addEventListener("keypress", function(){
     if(started==false){
         console.log("game is started!");
         started = true;
+    levelUp();
     }
 });
 
@@ -19,15 +20,16 @@ function btnFlash(btn){
     btn.classList.add("flash");
     setTimeout(function (){
         btn.classList.remove("flash");
-    },1000);
+    },150);
 }
 
 function levelUp(){
     level++;
     h3.innerText = `Level ${level}`;
     
-    let randIndex = Math.floor(Math,random()*3);
-    // let randColor = btns[randIndex];
-    let randBtn = document.querySelector(`.${randIndex+1}`)
-    btnFlash();
+    let randIndex = Math.floor(Math.random()*3);
+    let randNumber = btns[randIndex];
+    let randBtn = document.querySelector(`.${randNumber}`)
+    console.log(randNumber);
+    btnFlash(randBtn);
 }
